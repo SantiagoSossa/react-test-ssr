@@ -1,5 +1,4 @@
 import React from 'react'
-// import classes from '../css/Logo.module.css'
 import Link from 'next/link'
 
 export default function Logo(props) {
@@ -11,5 +10,3 @@ export default function Logo(props) {
         </div>
     )
 }
-
-// style={{ textDecoration: 'none' }}

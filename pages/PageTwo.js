@@ -1,5 +1,4 @@
 import React from "react";
-// import classes from "../css/PageTwo.module.css";
 import LinkToPage from "./Link";
 import Link from "next/link";
 import { Helmet } from "react-helmet";

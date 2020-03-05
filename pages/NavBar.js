@@ -1,5 +1,4 @@
 import React from 'react'
-// import classes from '../css/NavBar.module.css'
 import NavItems from './NavItems'
 import Logo from './Logo'
 

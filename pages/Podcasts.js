@@ -1,5 +1,4 @@
 import React from "react";
-// import classes from "../css/Podcasts.module.css";
 import Podcast from "./Podcast";
 import podcastimg1 from "../assets/podcast_img_1.svg";
 import podcastimg2 from "../assets/podcast_img_2.svg";
