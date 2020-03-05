@@ -9,14 +9,12 @@ const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 3000;
 
 if (!dev && cluster.isMaster) {
-  console.log(`Node cluster master ${process.pid} is running`);
 
   for (let i = 0; i < numCPUs; i++) {
     cluster.fork();
   }
 
   cluster.on('exit', (worker, code, signal) => {
-    console.error(`Node cluster worker ${worker.process.pid} exited: code ${code}, signal ${signal}`);
   });
 
 } else {
