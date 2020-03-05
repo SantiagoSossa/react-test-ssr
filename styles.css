@@ -49,7 +49,16 @@ body {
     color: #154751;
 }
 
-.a { color: inherit; } 
+.a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+
+  cursor: pointer;
+  
+  color: #154751;
+  text-decoration: none; } 
 
 .Link .a:hover{
     color: #150751;
