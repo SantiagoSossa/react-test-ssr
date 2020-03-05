@@ -1,34 +1,22 @@
 {
-  "name": "react-test-seo",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
-  },
+  "name": "heroku-nextjs-custom-server-express",
+  "version": "3.0.0",
+  "description": "Deploy Next.js server-side React apps using a custom Express server to Heroku",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "node server.js -p $PORT",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js -p $PORT"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "express": "^4.16.4",
+    "next": "^8.0.3",
+    "next-images": "^1.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "engines": {
+    "node": "10.x"
   }
 }
